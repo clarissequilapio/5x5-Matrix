@@ -1,5 +1,7 @@
 ﻿Public Class Form1
     Dim i As Short
+    Dim j As Short
+    Dim k As Short
     Private Sub nameInfo_TextChanged(sender As Object, e As EventArgs) Handles nameInfo.TextChanged
 
 
@@ -29,9 +31,9 @@
             vbNewLine + addressLabel.Text + " " + addressInfo.Text + vbNewLine +
             "==============================================" + vbNewLine
 
-            My.Computer.FileSystem.WriteAllText("C:\Users\Clarisse\Documents\5th year documents\2nd sem\electives 3\Files\Text\Sample" & i & ".txt", "" & allInfo.Text, True)
+            My.Computer.FileSystem.WriteAllText("C:\Users\Clarisse\Documents\5th year documents\2nd sem\electives 3\Files\Text\SampleTxt" & i & ".txt", "" & allInfo.Text, True)
             MsgBox("Successfully saved as Text File.", MsgBoxStyle.Information, "Successfully Saved")
-            clearboxes()
+
         Else
             MsgBox("Please Write all Information.", MsgBoxStyle.Critical, "Input Data")
 
@@ -39,22 +41,38 @@
     End Sub
     Private Sub xmlbtn_Click(sender As Object, e As EventArgs) Handles xmlbtn.Click
         If nameInfo.Text <> "" And ageInfo.Text <> "" And addressInfo.Text <> "" Then
-            i += 1
+            j += 1
 
             allInfo.Text = "==============================================" + vbNewLine +
             nameLabel.Text + " " + nameInfo.Text + vbNewLine + ageLabel.Text + " " + ageInfo.Text +
             vbNewLine + addressLabel.Text + " " + addressInfo.Text + vbNewLine +
             "==============================================" + vbNewLine
 
-            My.Computer.FileSystem.WriteAllText("C:\Users\Clarisse\Documents\5th year documents\2nd sem\electives 3\Files\XML\Sample" & i & ".xml", "" & allInfo.Text, True)
+            My.Computer.FileSystem.WriteAllText("C:\Users\Clarisse\Documents\5th year documents\2nd sem\electives 3\Files\XML\SampleXML" & i & ".xml", "" & allInfo.Text, True)
             MsgBox("Successfully saved as XML File.", MsgBoxStyle.Information, "Successfully Saved")
-            clearboxes()
+
         Else
             MsgBox("Please Write all Information.", MsgBoxStyle.Critical, "Input Data")
 
         End If
     End Sub
+    Private Sub jsonbtn_Click(sender As Object, e As EventArgs) Handles jsonbtn.Click
+        If nameInfo.Text <> "" And ageInfo.Text <> "" And addressInfo.Text <> "" Then
+            k += 1
 
+            allInfo.Text = "==============================================" + vbNewLine +
+            nameLabel.Text + " " + nameInfo.Text + vbNewLine + ageLabel.Text + " " + ageInfo.Text +
+            vbNewLine + addressLabel.Text + " " + addressInfo.Text + vbNewLine +
+            "==============================================" + vbNewLine
+
+            My.Computer.FileSystem.WriteAllText("C:\Users\Clarisse\Documents\5th year documents\2nd sem\electives 3\Files\JSON\SampleJSON" & i & ".json", "" & allInfo.Text, True)
+            MsgBox("Successfully saved as JSON File.", MsgBoxStyle.Information, "Successfully Saved")
+
+        Else
+            MsgBox("Please Write all Information.", MsgBoxStyle.Critical, "Input Data")
+
+        End If
+    End Sub
 
     Private Sub allInfo_TextChanged(sender As Object, e As EventArgs) Handles allInfo.TextChanged
 
@@ -68,6 +86,10 @@
             nameLabel.Text + " " + nameInfo.Text + vbNewLine + ageLabel.Text + " " + ageInfo.Text +
         vbNewLine + addressLabel.Text + " " + addressInfo.Text + vbNewLine +
         "==============================================" + vbNewLine
+
+    End Sub
+    Private Sub clrDataBtn_Click(sender As Object, e As EventArgs) Handles clrDataBtn.Click
+        clearboxes()
 
     End Sub
     Sub clearboxes()

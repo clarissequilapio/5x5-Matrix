@@ -33,6 +33,7 @@ Partial Class Form1
         Me.jsonbtn = New System.Windows.Forms.Button()
         Me.allInfo = New System.Windows.Forms.TextBox()
         Me.displayBtn = New System.Windows.Forms.Button()
+        Me.clrDataBtn = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'nameLabel
@@ -95,7 +96,7 @@ Partial Class Form1
         '
         'txtbtn
         '
-        Me.txtbtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(180, Byte), Integer), CType(CType(106, Byte), Integer))
+        Me.txtbtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(166, Byte), Integer))
         Me.txtbtn.FlatAppearance.BorderSize = 0
         Me.txtbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.txtbtn.Font = New System.Drawing.Font("Bebas Neue", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -109,12 +110,12 @@ Partial Class Form1
         '
         'xmlbtn
         '
-        Me.xmlbtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(180, Byte), Integer), CType(CType(106, Byte), Integer))
+        Me.xmlbtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(166, Byte), Integer))
         Me.xmlbtn.FlatAppearance.BorderSize = 0
         Me.xmlbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.xmlbtn.Font = New System.Drawing.Font("Bebas Neue", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.xmlbtn.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.xmlbtn.Location = New System.Drawing.Point(304, 448)
+        Me.xmlbtn.Location = New System.Drawing.Point(308, 448)
         Me.xmlbtn.Name = "xmlbtn"
         Me.xmlbtn.Size = New System.Drawing.Size(102, 49)
         Me.xmlbtn.TabIndex = 7
@@ -123,7 +124,7 @@ Partial Class Form1
         '
         'jsonbtn
         '
-        Me.jsonbtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(180, Byte), Integer), CType(CType(106, Byte), Integer))
+        Me.jsonbtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(166, Byte), Integer))
         Me.jsonbtn.FlatAppearance.BorderSize = 0
         Me.jsonbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.jsonbtn.Font = New System.Drawing.Font("Bebas Neue", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -159,12 +160,27 @@ Partial Class Form1
         Me.displayBtn.Text = "Click Here to Display Text"
         Me.displayBtn.UseVisualStyleBackColor = False
         '
+        'clrDataBtn
+        '
+        Me.clrDataBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(135, Byte), Integer))
+        Me.clrDataBtn.FlatAppearance.BorderSize = 0
+        Me.clrDataBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.clrDataBtn.Font = New System.Drawing.Font("Bebas Neue", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.clrDataBtn.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.clrDataBtn.Location = New System.Drawing.Point(236, 538)
+        Me.clrDataBtn.Name = "clrDataBtn"
+        Me.clrDataBtn.Size = New System.Drawing.Size(263, 49)
+        Me.clrDataBtn.TabIndex = 11
+        Me.clrDataBtn.Text = "Clear Data"
+        Me.clrDataBtn.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(103, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(698, 509)
+        Me.ClientSize = New System.Drawing.Size(698, 620)
+        Me.Controls.Add(Me.clrDataBtn)
         Me.Controls.Add(Me.displayBtn)
         Me.Controls.Add(Me.allInfo)
         Me.Controls.Add(Me.jsonbtn)
@@ -197,4 +213,5 @@ Partial Class Form1
     Friend WithEvents jsonbtn As Button
     Friend WithEvents allInfo As TextBox
     Friend WithEvents displayBtn As Button
+    Friend WithEvents clrDataBtn As Button
 End Class
