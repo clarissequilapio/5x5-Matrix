@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.nameLabel = New System.Windows.Forms.Label()
         Me.ageLabel = New System.Windows.Forms.Label()
         Me.addressLabel = New System.Windows.Forms.Label()
@@ -34,6 +35,8 @@ Partial Class Form1
         Me.allInfo = New System.Windows.Forms.TextBox()
         Me.displayBtn = New System.Windows.Forms.Button()
         Me.clrDataBtn = New System.Windows.Forms.Button()
+        Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
+        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'nameLabel
@@ -174,6 +177,10 @@ Partial Class Form1
         Me.clrDataBtn.Text = "Clear Data"
         Me.clrDataBtn.UseVisualStyleBackColor = False
         '
+        'ErrorProvider1
+        '
+        Me.ErrorProvider1.ContainerControl = Me
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -197,6 +204,7 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.ShowIcon = False
         Me.Text = "Information"
+        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -214,4 +222,5 @@ Partial Class Form1
     Friend WithEvents allInfo As TextBox
     Friend WithEvents displayBtn As Button
     Friend WithEvents clrDataBtn As Button
+    Friend WithEvents ErrorProvider1 As ErrorProvider
 End Class

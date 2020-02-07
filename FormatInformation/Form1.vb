@@ -5,10 +5,22 @@
     Private Sub nameInfo_TextChanged(sender As Object, e As EventArgs) Handles nameInfo.TextChanged
 
 
-    End Sub
 
-    Private Sub ageInfo_TextChanged(sender As Object, e As EventArgs) Handles ageInfo.TextChanged
-        Dim ageInfo As Byte
+    End Sub
+    Public Sub NumberOnly(ByVal e As System.Windows.Forms.KeyPressEventArgs)
+        If (Asc(e.KeyChar) >= 48 And Asc(e.KeyChar) <= 57) Then
+        Else
+            e.Handled = True
+            'MsgBox("Number Only", MsgBoxStyle.Information)
+            ErrorProvider1.SetError(ageInfo, "Please Enter Number Only")
+
+        End If
+
+    End Sub
+    Private Sub ageInfo_KeyPress(sender As Object, e As EventArgs) Handles ageInfo.KeyPress
+        NumberOnly(e)
+
+
 
     End Sub
 
