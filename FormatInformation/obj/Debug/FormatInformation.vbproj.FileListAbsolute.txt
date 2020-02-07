@@ -1,0 +1,11 @@
+C:\Users\Clarisse\source\repos\FormatInformation\FormatInformation\bin\Debug\FormatInformation.exe.config
+C:\Users\Clarisse\source\repos\FormatInformation\FormatInformation\bin\Debug\FormatInformation.exe
+C:\Users\Clarisse\source\repos\FormatInformation\FormatInformation\bin\Debug\FormatInformation.pdb
+C:\Users\Clarisse\source\repos\FormatInformation\FormatInformation\bin\Debug\FormatInformation.xml
+C:\Users\Clarisse\source\repos\FormatInformation\FormatInformation\obj\Debug\FormatInformation.vbprojAssemblyReference.cache
+C:\Users\Clarisse\source\repos\FormatInformation\FormatInformation\obj\Debug\FormatInformation.Form1.resources
+C:\Users\Clarisse\source\repos\FormatInformation\FormatInformation\obj\Debug\FormatInformation.Resources.resources
+C:\Users\Clarisse\source\repos\FormatInformation\FormatInformation\obj\Debug\FormatInformation.vbproj.GenerateResource.cache
+C:\Users\Clarisse\source\repos\FormatInformation\FormatInformation\obj\Debug\FormatInformation.exe
+C:\Users\Clarisse\source\repos\FormatInformation\FormatInformation\obj\Debug\FormatInformation.xml
+C:\Users\Clarisse\source\repos\FormatInformation\FormatInformation\obj\Debug\FormatInformation.pdb
