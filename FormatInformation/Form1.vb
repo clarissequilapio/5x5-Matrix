@@ -19,16 +19,21 @@
     End Sub
 
     Private Sub txtbtn_Click(sender As Object, e As EventArgs) Handles txtbtn.Click
-        My.Computer.FileSystem.WriteAllText("C:\Users\Clarisse\Documents\5th year documents\2nd sem\electives 3\Sample.txt", "" & nameInfo.Text, True)
+        allInfo.AppendText(nameLabel.Text + " " + nameInfo.Text + vbNewLine)
+        allInfo.AppendText(ageLabel.Text + " " + ageInfo.Text + vbNewLine)
+        allInfo.AppendText(addressLabel.Text + " " + addressInfo.Text + vbNewLine)
+        My.Computer.FileSystem.WriteAllText("C:\Users\Clarisse\Documents\5th year documents\2nd sem\electives 3\Files\Sample.txt", "" & allInfo.Text, True)
     End Sub
 
     Private Sub allInfo_TextChanged(sender As Object, e As EventArgs) Handles allInfo.TextChanged
 
+
     End Sub
 
     Private Sub displayBtn_Click(sender As Object, e As EventArgs) Handles displayBtn.Click
-        allInfo.AppendText(nameLabel.Text + " " + nameInfo.Text + vbNewLine)
-        allInfo.AppendText(ageLabel.Text + " " + ageInfo.Text + vbNewLine)
-        allInfo.AppendText(addressLabel.Text + " " + addressInfo.Text + vbNewLine)
+        allInfo.Visible = True
+        allInfo.Equals(nameLabel.Text + " " + nameInfo.Text + vbNewLine)
+        allInfo.Equals(ageLabel.Text + " " + ageInfo.Text + vbNewLine)
+        allInfo.Equals(addressLabel.Text + " " + addressInfo.Text + vbNewLine)
     End Sub
 End Class
