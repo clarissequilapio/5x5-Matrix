@@ -17,4 +17,8 @@
     Private Sub nameLabel_Click(sender As Object, e As EventArgs) Handles nameLabel.Click
 
     End Sub
+
+    Private Sub txtbtn_Click(sender As Object, e As EventArgs) Handles txtbtn.Click
+        My.Computer.FileSystem.WriteAllText("C:\Users\Clarisse\Documents\5th year documents\2nd sem\electives 3\Sample.txt", "" & nameInfo.Text, True)
+    End Sub
 End Class
