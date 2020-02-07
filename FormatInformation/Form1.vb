@@ -12,7 +12,7 @@
         Else
             e.Handled = True
             'MsgBox("Number Only", MsgBoxStyle.Information)
-            ErrorProvider1.SetError(ageInfo, "Please Enter Number Only")
+            'ErrorProvider1.SetError(ageInfo, "Please Enter Number Only")
 
         End If
 
@@ -44,6 +44,7 @@
             "==============================================" + vbNewLine
 
             My.Computer.FileSystem.WriteAllText("C:\Users\Clarisse\Documents\5th year documents\2nd sem\electives 3\Files\Text\SampleTxt" & i & ".txt", "" & allInfo.Text, True)
+
             MsgBox("Successfully saved as Text File.", MsgBoxStyle.Information, "Successfully Saved")
 
         Else
