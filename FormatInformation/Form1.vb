@@ -8,11 +8,13 @@
 
     End Sub
     Public Sub NumberOnly(ByVal e As System.Windows.Forms.KeyPressEventArgs)
-        If (Asc(e.KeyChar) >= 48 And Asc(e.KeyChar) <= 57) Then
+        If (Asc(e.KeyChar) >= 48 And Asc(e.KeyChar) <= 57 Or Asc(e.KeyChar) = 8) Then
+            ErrorProvider1.Clear()
+
         Else
             e.Handled = True
             'MsgBox("Number Only", MsgBoxStyle.Information)
-            'ErrorProvider1.SetError(ageInfo, "Please Enter Number Only")
+            ErrorProvider1.SetError(ageInfo, "Please Enter Number Only")
 
         End If
 

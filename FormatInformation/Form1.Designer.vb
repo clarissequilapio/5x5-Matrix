@@ -146,6 +146,7 @@ Partial Class Form1
         Me.allInfo.Multiline = True
         Me.allInfo.Name = "allInfo"
         Me.allInfo.ReadOnly = True
+        Me.allInfo.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.allInfo.Size = New System.Drawing.Size(589, 181)
         Me.allInfo.TabIndex = 9
         Me.allInfo.Visible = False
