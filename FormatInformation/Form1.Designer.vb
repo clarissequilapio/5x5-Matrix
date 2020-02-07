@@ -80,6 +80,7 @@ Partial Class Form1
         '
         Me.ageInfo.Font = New System.Drawing.Font("Louis George Café", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ageInfo.Location = New System.Drawing.Point(167, 94)
+        Me.ageInfo.MaxLength = 3
         Me.ageInfo.Name = "ageInfo"
         Me.ageInfo.Size = New System.Drawing.Size(479, 33)
         Me.ageInfo.TabIndex = 4
